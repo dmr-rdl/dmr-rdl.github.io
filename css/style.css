@@ -1,0 +1,79 @@
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+}
+
+main p {
+    margin: 20pt 20pt 20pt 20pt;
+    line-height: 1.5;
+}
+
+footer {
+    margin: 20pt 0 0 0;
+    padding: 10pt 20pt 10pt 20pt;
+    background-color: #777;
+    color: white;
+}
+
+/* Elementos do título */
+
+h1 {
+    font-size: 60pt;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+.titulo_wrap {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    margin: auto;
+    width: 70%;
+    /* margin-top: 60pt; */
+}
+
+.titulo_texto * {
+    text-align: right;
+    margin: 10pt 0 10pt 0;
+
+}
+
+div.titulo_texto { margin-right: 3em; }
+
+.titulo_imagem {
+    height: 25em;
+    width: auto;
+}
+
+/* Barra de navegação */
+
+.topnav { 
+    background-color: #222;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.topnav a, .topnav p {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15pt;
+    margin: 0;
+}
+
+.topnav a:hover {
+    background-color: #444;
+}
+
+.topnav a.nav_ativo {
+    background-color: #EEE;
+    color: #222;
+}
