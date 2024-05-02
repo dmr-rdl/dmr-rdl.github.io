@@ -8,6 +8,13 @@ main p {
     line-height: 1.5;
 }
 
+footer {
+    margin: 20pt 0 0 0;
+    padding: 10pt 20pt 10pt 20pt;
+    background-color: #777;
+    color: white;
+}
+
 /* Elementos do título */
 
 h1 {
