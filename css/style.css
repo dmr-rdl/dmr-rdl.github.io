@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-main p {
+main p, main li {
     margin: 20pt 20pt 20pt 20pt;
     line-height: 1.5;
 }
