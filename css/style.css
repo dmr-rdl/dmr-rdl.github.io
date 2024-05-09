@@ -4,12 +4,12 @@ body {
 }
 
 main {
-    width: 70%;
+    width: 75%;
     margin: auto;
 }
 
 main p, main li {
-    margin: 20pt 20pt 20pt 20pt;
+    margin: 20pt 0;
     line-height: 1.5;
 }
 
@@ -19,6 +19,33 @@ footer {
     background-color: #777;
     color: white;
 }
+
+/* Figuras */
+
+div.imagem_texto {
+    display: grid;
+    align-items: start;
+    grid-template-columns: auto auto;
+}
+
+div.imagem_texto p { margin-top: 0; }
+
+figure { margin: 0 0 0 20pt; width: var(--largura_img);}
+
+figure img {
+    display: block;
+    margin-left: auto;
+    width: var(--largura_img) ;
+    height: auto;}
+
+figure figcaption {
+    width: 100%;
+    font-size: small;
+    color: #444;
+    margin-top: 10pt;
+}
+
+/* Citações */
 
 blockquote.quote_pt {
     font-size: larger;
