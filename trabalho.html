@@ -6,7 +6,8 @@
 		<link rel="icon" type="image/x-icon" href="/favicon.ico">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">		<link rel="stylesheet" href="/css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/css/style.css">
 	</head>
 
 	<body>
@@ -25,17 +26,28 @@
 
         <main>
 			<p>Dennis e o seu parceiro na Bell Labs, Ken Thompson, trabalhavam no desenvolvimento de um sistema operativo pioneiro, o Multics, durante os anos 60. O projeto, embora visionário e inovador, era demasiado ambicioso, produzindo um sistema impossível de utilizar num ambiente prático; por volta de 1968/69, a Bell Labs tinha desistido do projeto. Surgiu, então, a necessidade de uma alternativa.</p>
+
 			<p>Thompson descobriu, algures nos laboratórios, um PDP-7, mini-computador de 1965, relativamente barato (~650.000 euros atuais) e capaz para a altura, embora com alguns anos. Num projeto independente, começou, juntamente com Ritchie, a desenvolver aplicações para o computador.</p>
+
 			<p>O primeiro programa foi “Space Travel”, um jogo desenvolvido anteriormente por Thompson no Multics, no qual o jogador guia uma nave espacial pelo Sistema Solar. Embora primitivo, a elaboração do código para o PDP-7 foi um processo bastante complexo, pois a equipa escolheu escrever de raiz todos os componentes necessários, incluindo a implementação de números de vírgula flutuante, o desenho dos caracteres gráficos, e um sistema de <em>debug</em>. Inicialmente, não havendo um <em>assembler</em> (montador) na máquina, o código de montagem era traduzido numa outra máquina, com o sistema operativo GECOS; as instruções resultantes, sob a forma de longas fitas perfuradas, eram então introduzidas no PDP-7.</p>
+
 			<p>O “Space Travel”, porém, era apenas um estudo sobre o desenvolvimento de programas no sistema. Com o novo fluxo de trabalho, foram desenvolvidos os componentes de um novo sistema operativo: um gerenciador de processos, um sistema de ficheiros, ferramentas de cópia, remoção, e impressão destes e um interpretador de comandos, bem como um <em>assembler</em>, permitindo o desenvolvimento na própria máquina.</p>
+
 			<p>Nascia um novo sistema operativo. A invenção do nome é atribuída a Brian Kernighan: o Multics (<em>MULTiplexed Information and Computing Service</em>) tinha falhado, segundo os desenvolvedores do novo sistema, devido à sua excessiva complexidade na divisão em vários elementos interligados (<em>multiplexed</em>). O novo sistema operativo propunha uma abordagem simples e funcional, oposta ao Multics (<em>uniplexed</em>). Foi então chamado Unics, que se mutou para Unix.</p>
+
 			<p>O desenvolvimento de programas no novo sistema era proibitivamente lento, pois era feito em linguagem de montagem, requerendo então uma linguagem de alto nível. Tentou-se inicialmente implementar a linguagem Fortran; embora muito popular e poderosa, a implementação não foi possível, devido a limitações do sistema. O resultado final foi uma nova linguagem de programação, definida por Thompson, inspirada no BCPL (<em>Basic Combined Programming Language</em>), sendo por isso chamada B.</p>
+
 			<p>Ritchie mais tarde expandiu o B com novos conceitos e funcionalidades; nasceu então, em 1971, o C. A conversão do código do Unix para C mudou fundamentalmente a estrutura interna do sistema, que era agora mais racional e generalizada; um sistema implementável em qualquer sistema para o qual se pudesse compilar o código em C.</p>
+
 			<p>As vantagens do Unix sobre as alternativas no mercado eram claras para muitos, incluindo Steve Jobs, que aquando da sua reintegração na Apple após a compra da NeXT, trouxe uma versão do sistema para os produtos da empresa. O macOS contemporâneo continua uma versão modificada do Unix.</p>
+
 			<p>Em 1983, foi iniciado o projeto GNU (<em>GNU's not Unix</em>, o GNU não é Unix), com o intuito de criar um sistema operativo livre compatível com o Unix. Em 1991, com a publicação do Linux, por Linus Torvalds, esta iniciativa foi possibilitada. Os sistemas operativos que utilizam estes programas (muitas vezes referidos coletivamente como Linux) são executados na maioria dos grandes servidores e <em>data centers</em> mundiais.</p>
+
 			<p>A linguagem de programação C ganhou imensa popularidade com a explosão da computação no final do século passado; desde os anos 70 têm sido criados compiladores de C para virtualmente todas as arquiteturas e para todos os sistemas operativos existentes, garantindo portabilidade com relativa facilidade. A maioria dos sistemas operativos em uso mantém grandes porções de código em C; nas aplicações modernas o seu uso é raro, preferindo-se outras linguagens como C++ e Java, estas também dependentes do C, com que partilham sintaxe e estruturas similares.</p>
+
 			<blockquote class="quote_pt">«Uma das coisas mais reconfortantes sobre as velhas memórias é a sua tendência a adquirir um tom “cor-de-rosa”. O ambiente de programação oferecido pelas primeiras versões do Unix parece, como aqui descrito, extremamente difícil e primitivo. Tenho a certeza que, se fosse forçado a voltar ao PDP-7, acharia-o intoleravelmente limitante e escasso em conveniências. Todavia, não parecia assim na altura; a memória fixa-se no que era bom e no que perdurou, e na alegria de ajudar a criar melhorias que fizeram a vida melhor. Espero que daqui a dez anos possamos olhar para trás com a mesma impressão mista de progresso e continuidade.»</blockquote>
 			<blockquote class="quote_en">«One of the comforting things about old memories is their tendency to take on a rosy glow. The programming environment provided by the early versions of Unix seems, when described here, to be extremely harsh and primitive. I am sure that if forced back to the PDP-7 I would find it intolerably limiting and lacking in conveniences. Nevertheless, it did not seem so at the time; the memory fixes on what was good and what lasted, and on the joy of helping to create the improvements that made life better. In ten years, I hope we can look back with the same mixed impression of progress combined with continuity.» (artigo apresentado numa conferência em Sydney)</blockquote>
+
   		</main>
 
 		<footer>
