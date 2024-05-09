@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+main {
+    width: 70%;
+    margin: auto;
+}
+
 main p, main li {
     margin: 20pt 20pt 20pt 20pt;
     line-height: 1.5;
@@ -13,6 +18,16 @@ footer {
     padding: 10pt 20pt 10pt 20pt;
     background-color: #777;
     color: white;
+}
+
+blockquote.quote_pt {
+    font-size: larger;
+    font-style: italic;
+}
+
+blockquote.quote_en {
+    margin-top: 10pt;
+    color: #363636;
 }
 
 /* Elementos do título */
@@ -65,7 +80,7 @@ div.titulo_texto { margin-right: 3em; }
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 15pt;
+    /* font-size: 15pt;*/
     margin: 0;
 }
 
