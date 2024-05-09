@@ -5,7 +5,7 @@ body {
 
 main {
     width: 75%;
-    margin: auto;
+    margin: 20pt auto;
 }
 
 main p, main li {
@@ -30,11 +30,11 @@ div.imagem_texto {
 
 div.imagem_texto p { margin-top: 0; }
 
-figure { margin: 0 0 0 20pt; width: var(--largura_img);}
+div.imagem_texto_dir figure { margin: 0 0 0 20pt; width: var(--largura_img);}
+div.imagem_texto_esq figure { margin: 0 20pt 0 0; width: var(--largura_img);}
 
 figure img {
     display: block;
-    margin-left: auto;
     width: var(--largura_img) ;
     height: auto;}
 
@@ -80,13 +80,13 @@ h2 {
 
 .titulo_texto * {
     text-align: right;
-    margin: 10pt 0 10pt 0;
+    margin: 5pt 0 5pt 0;
 
 }
 
 div.titulo_texto { margin-right: 3em; }
 
-.titulo_imagem {
+img.titulo_imagem {
     height: 25em;
     width: auto;
 }
@@ -95,11 +95,12 @@ div.titulo_texto { margin-right: 3em; }
 
 .topnav { 
     background-color: #222;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
+    overflow: auto;
+    /* position: fixed;
+    top: 0; */
     width: 100%;
     z-index: 10000;
+    white-space: nowrap;
 }
 
 .topnav a, .topnav p {
@@ -128,4 +129,27 @@ div.titulo_texto { margin-right: 3em; }
 
 .leaflet-popup-content {
     font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+    main { width: 95%;}
+
+    div.titulo_imagem { display: none; }
+
+    div.titulo_texto { margin: 0; }
+
+    .titulo_wrap { grid-template-columns: auto; }
+
+    .titulo_texto * {text-align: center; margin: 0;}
+
+    .topnav { width: auto; }
+
+    div.topnav * { float: none; display: inline-block; }
+    
+    div.imagem_texto { width: 100%; justify-content: center; grid-auto-flow: column; grid-template-columns: auto; grid-template-rows: auto auto;}
+
+    div.imagem_texto figure { margin: 10pt auto; }
+
 }
