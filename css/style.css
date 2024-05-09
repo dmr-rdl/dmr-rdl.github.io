@@ -99,6 +99,7 @@ div.titulo_texto { margin-right: 3em; }
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10000;
 }
 
 .topnav a, .topnav p {
@@ -118,4 +119,13 @@ div.titulo_texto { margin-right: 3em; }
 .topnav a.nav_ativo {
     background-color: #EEE;
     color: #222;
+}
+
+/* Mapa */
+#map {
+    height: 350px;
+}
+
+.leaflet-popup-content {
+    font-family: 'IBM Plex Mono', monospace;
 }
