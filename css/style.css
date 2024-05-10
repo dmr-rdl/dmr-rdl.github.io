@@ -133,7 +133,7 @@ img.titulo_imagem {
 
 /* Responsive */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     main { width: 95%;}
 
     div.titulo_imagem { display: none; }
