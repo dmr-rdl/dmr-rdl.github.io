@@ -9,6 +9,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/css/style.css">
+
+		<style>
+			.mw-highlight .cp{color:#9c6500}
+			.mw-highlight .cpf{color:#3d7b7b;font-style:italic}
+			.mw-highlight .gt{color:#04d}
+			.mw-highlight .kt{color:#b00040}
+			.mw-highlight .s{color:#ba2121}
+			.mw-highlight .na{color:#687822}
+			.mw-highlight .no{color:#800}
+			.mw-highlight .nf{color:#00f}
+			.mw-highlight .nl{color:#767600}
+			.mw-highlight .nv{color:#19177c}
+			.mw-highlight .w{color:#bbb}
+			.mw-highlight .s2{color:#ba2121}
+			.mw-highlight .se{color:#aa5d1f;font-weight:700}
+			.mw-highlight .s1{color:#ba2121}
+		</style>
 	</head>
 
 	<body>
@@ -25,9 +42,16 @@
 		</div>
 
         <main>
-			<p>Dennis e o seu parceiro na Bell Labs, Ken Thompson, trabalhavam no desenvolvimento de um sistema operativo pioneiro, o Multics, durante os anos 60. O projeto, embora visionário e inovador, era demasiado ambicioso, produzindo um sistema impossível de utilizar num ambiente prático; por volta de 1968/69, a Bell Labs tinha desistido do projeto. Surgiu, então, a necessidade de uma alternativa.</p>
-
-			<p>Thompson descobriu, algures nos laboratórios, um PDP-7, mini-computador de 1965, relativamente barato (~650.000 euros atuais) e capaz para a altura, embora com alguns anos. Num projeto independente, começou, juntamente com Ritchie, a desenvolver aplicações para o computador.</p>
+			<div class="imagem_texto imagem_texto_dir">
+				<div>
+					<p>Dennis e o seu parceiro na Bell Labs, Ken Thompson, trabalhavam no desenvolvimento de um sistema operativo pioneiro, o Multics, durante os anos 60. O projeto, embora visionário e inovador, era demasiado ambicioso, produzindo um sistema impossível de utilizar num ambiente prático; por volta de 1968/69, a Bell Labs tinha desistido do projeto. Surgiu, então, a necessidade de uma alternativa.</p>
+					<p>Thompson descobriu, algures nos laboratórios, um PDP-7, mini-computador de 1965, relativamente barato (~650.000 euros atuais) e capaz para a altura, embora com alguns anos. Num projeto independente, começou, juntamente com Ritchie, a desenvolver aplicações para o computador.</p>
+				</div>
+				<figure style="--largura_img: 20em;">
+					<img src="/images/pdp7.webp" alt="Fotografia de um PDP-7, mini-computador dos anos 60">
+					<figcaption>Um PDP-7, mini-computador dos anos 60.</figcaption>
+				</figure>
+			</div>
 
 			<p>O primeiro programa foi “Space Travel”, um jogo desenvolvido anteriormente por Thompson no Multics, no qual o jogador guia uma nave espacial pelo Sistema Solar. Embora primitivo, a elaboração do código para o PDP-7 foi um processo bastante complexo, pois a equipa escolheu escrever de raiz todos os componentes necessários, incluindo a implementação de números de vírgula flutuante, o desenho dos caracteres gráficos, e um sistema de <em>debug</em>. Inicialmente, não havendo um <em>assembler</em> (montador) na máquina, o código de montagem era traduzido numa outra máquina, com o sistema operativo GECOS; as instruções resultantes, sob a forma de longas fitas perfuradas, eram então introduzidas no PDP-7.</p>
 
@@ -35,9 +59,47 @@
 
 			<p>Nascia um novo sistema operativo. A invenção do nome é atribuída a Brian Kernighan: o Multics (<em>MULTiplexed Information and Computing Service</em>) tinha falhado, segundo os desenvolvedores do novo sistema, devido à sua excessiva complexidade na divisão em vários elementos interligados (<em>multiplexed</em>). O novo sistema operativo propunha uma abordagem simples e funcional, oposta ao Multics (<em>uniplexed</em>). Foi então chamado Unics, que se mutou para Unix.</p>
 
+			<figure>
+				<iframe width="100%" height="auto" style="aspect-ratio: 16 / 9" src="https://www.youtube.com/embed/pvaPaWyiuLA?si=TXVZPt-UtUUepXqF&amp;start=112" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<figcaption>Um PDP-7 a correr o Unix 0 (primeira versão) compila e executa um programa "Hello world!". (YouTube, Living Computers)</figcaption>
+			</figure>
+
 			<p>O desenvolvimento de programas no novo sistema era proibitivamente lento, pois era feito em linguagem de montagem, requerendo então uma linguagem de alto nível. Tentou-se inicialmente implementar a linguagem Fortran; embora muito popular e poderosa, a implementação não foi possível, devido a limitações do sistema. O resultado final foi uma nova linguagem de programação, definida por Thompson, inspirada no BCPL (<em>Basic Combined Programming Language</em>), sendo por isso chamada B.</p>
 
-			<p>Ritchie mais tarde expandiu o B com novos conceitos e funcionalidades; nasceu então, em 1971, o C. A conversão do código do Unix para C mudou fundamentalmente a estrutura interna do sistema, que era agora mais racional e generalizada; um sistema implementável em qualquer sistema para o qual se pudesse compilar o código em C.</p>
+			<div class="imagem_texto imagem_texto_dir">
+				<div>
+					<p>Ritchie mais tarde expandiu o B com novos conceitos e funcionalidades; nasceu então, em 1971, o C. A conversão do código do Unix para C mudou fundamentalmente a estrutura interna do sistema, que era agora mais racional e generalizada; um sistema implementável em qualquer sistema para o qual se pudesse compilar o código em C.</p>
+				</div>
+				<figure>
+				<div style="display: grid; grid-template-columns: 1fr 1fr; font-size: large;">
+					<pre class="mw-highlight"><span></span><span class="na">.data</span>
+<span class="nl">str:</span><span class="w"> </span><span class="na">.ascii</span><span class="w"> </span><span class="s">"Hello, world!\n"</span>
+<span class="nf">str_len</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="p">-</span><span class="w"> </span><span class="no">str</span>
+	
+<span class="na">.text</span>
+<span class="na">.globl</span><span class="w"> </span><span class="no">_start</span>
+<span class="nl">_start:</span>
+<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$4</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%ebx</span>
+<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$str</span><span class="p">,</span><span class="w"> </span><span class="nv">%ecx</span>
+<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$str_len</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
+<span class="w">    </span><span class="nf">int</span><span class="w"> </span><span class="no">$0x80</span>
+	
+<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%ebx</span>
+<span class="w">    </span><span class="nf">int</span><span class="w"> </span><span class="no">$0x80</span></pre>
+				
+				<pre class="mw-highlight"><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+				
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"hello, world</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span>
+					</pre>
+				</div>
+				<figcaption>Código de um simples programa "Hello world!", em Assembly x86 e em C. O programa da esquerda só é compatível com um tipo de processador e só com Unix, o da direita é universal.</figcaption>
+			</figure>
+			</div>
 
 			<p>As vantagens do Unix sobre as alternativas no mercado eram claras para muitos, incluindo Steve Jobs, que aquando da sua reintegração na Apple após a compra da NeXT, trouxe uma versão do sistema para os produtos da empresa. O macOS contemporâneo continua uma versão modificada do Unix.</p>
 
