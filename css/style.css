@@ -26,6 +26,7 @@ div.imagem_texto {
     display: grid;
     align-items: start;
     grid-template-columns: auto auto;
+    width: 100%;
 }
 
 div.imagem_texto p { margin-top: 0; }
@@ -67,6 +68,7 @@ h1 {
 h2 {
     font-size: 20pt;
     font-weight: 600;
+    line-height: 1.5;
 }
 
 .titulo_wrap {
@@ -78,10 +80,9 @@ h2 {
     /* margin-top: 60pt; */
 }
 
-.titulo_texto * {
+.titulo_texto h1, .titulo_texto h2 {
     text-align: right;
-    margin: 5pt 0 5pt 0;
-
+    margin: 0 0;
 }
 
 div.titulo_texto { margin-right: 3em; }
