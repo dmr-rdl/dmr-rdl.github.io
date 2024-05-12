@@ -143,7 +143,7 @@ img.titulo_imagem {
 
     .titulo_wrap { grid-template-columns: auto; }
 
-    .titulo_texto * {text-align: center; margin: 0;}
+    .titulo_texto h1, .titulo_texto h2 {text-align: center; margin: 0;}
 
     .topnav { width: auto; }
 
