@@ -70,32 +70,31 @@
 				<div>
 					<p>Ritchie mais tarde expandiu o B com novos conceitos e funcionalidades; nasceu então, em 1971, o C. A conversão do código do Unix para C mudou fundamentalmente a estrutura interna do sistema, que era agora mais racional e generalizada; um sistema implementável em qualquer sistema para o qual se pudesse compilar o código em C.</p>
 				</div>
-				<figure>
-				<div style="display: grid; grid-template-columns: auto auto; justify-content: space-between; font-size: large; width: 100%;">
-					<pre class="mw-highlight"><span></span><span class="na">.data</span>
-<span class="nl">str:</span><span class="w"> </span><span class="na">.ascii</span><span class="w"> </span><span class="s">"Hello, world!\n"</span>
-<span class="nf">str_len</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="p">-</span><span class="w"> </span><span class="no">str</span>
+				<figure style="overflow: auto;">
+				<div style="display: grid; grid-template-columns: auto auto; justify-content: space-between; width: 100%;">
+					<p class="mw-highlight"><span></span><span class="na">.data</span><br>
+<span class="nl">str:</span><span class="w"> </span><span class="na">.ascii</span><span class="w"> </span><span class="s">"Hello, world!\n"</span><br>
+<span class="nf">str_len</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="p">-</span><span class="w"> </span><span class="no">str</span><br><br>
 	
-<span class="na">.text</span>
-<span class="na">.globl</span><span class="w"> </span><span class="no">_start</span>
-<span class="nl">_start:</span>
-<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$4</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%ebx</span>
-<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$str</span><span class="p">,</span><span class="w"> </span><span class="nv">%ecx</span>
-<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$str_len</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
-<span class="w">    </span><span class="nf">int</span><span class="w"> </span><span class="no">$0x80</span>
+<span class="na">.text</span><br>
+<span class="na">.globl</span><span class="w"> </span><span class="no">_start</span> <br>
+<span class="nl">_start:</span> <br>
+<span class="w">&emsp;&emsp;</span><span class="nf">movl</span><span class="w"> </span><span class="no">$4</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span><br>
+<span class="w">&emsp;&emsp;</span><span class="nf">movl</span><span class="w"> </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%ebx</span><br>
+<span class="w">&emsp;&emsp;</span><span class="nf">movl</span><span class="w"> </span><span class="no">$str</span><span class="p">,</span><span class="w"> </span><span class="nv">%ecx</span><br>
+<span class="w">&emsp;&emsp;</span><span class="nf">movl</span><span class="w"> </span><span class="no">$str_len</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span><br>
+<span class="w">&emsp;&emsp;</span><span class="nf">int</span><span class="w"> </span><span class="no">$0x80</span><br><br>
 	
-<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-<span class="w">    </span><span class="nf">movl</span><span class="w"> </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%ebx</span>
-<span class="w">    </span><span class="nf">int</span><span class="w"> </span><span class="no">$0x80</span></pre>
+<span class="w">&emsp;&emsp;</span><span class="nf">movl</span><span class="w"> </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span><br>
+<span class="w">&emsp;&emsp;</span><span class="nf">movl</span><span class="w"> </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%ebx</span><br>
+<span class="w">&emsp;&emsp;</span><span class="nf">int</span><span class="w"> </span><span class="no">$0x80</span></p>
 				
-				<pre class="mw-highlight"><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
+				<p class="mw-highlight"><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span><br><br>
 				
-<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
-<span class="p">{</span>
-<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">"Hello, world!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
-<span class="p">}</span>
-					</pre>
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><br>
+<span class="p">{</span><br>
+<span class="w">&emsp;&emsp;</span><span class="n">printf</span><span class="p">(</span><span class="s">"Hello, world!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span><br>
+<span class="p">}</span></p>
 				</div>
 				<figcaption>Código de um simples programa "Hello world!", em Assembly x86 e em C. O programa da esquerda só é compatível com um tipo de processador e só com Unix, o da direita é universal.</figcaption>
 			</figure>
@@ -108,7 +107,7 @@
 			<p>A linguagem de programação C ganhou imensa popularidade com a explosão da computação no final do século passado; desde os anos 70 têm sido criados compiladores de C para virtualmente todas as arquiteturas e para todos os sistemas operativos existentes, garantindo portabilidade com relativa facilidade. A maioria dos sistemas operativos em uso mantém grandes porções de código em C; nas aplicações modernas o seu uso é raro, preferindo-se outras linguagens como C++ e Java, estas também dependentes do C, com que partilham sintaxe e estruturas similares.</p>
 
 			<blockquote class="quote_pt">«Uma das coisas mais reconfortantes sobre as velhas memórias é a sua tendência a adquirir um tom “cor-de-rosa”. O ambiente de programação oferecido pelas primeiras versões do Unix parece, como aqui descrito, extremamente difícil e primitivo. Tenho a certeza que, se fosse forçado a voltar ao PDP-7, acharia-o intoleravelmente limitante e escasso em conveniências. Todavia, não parecia assim na altura; a memória fixa-se no que era bom e no que perdurou, e na alegria de ajudar a criar melhorias que fizeram a vida melhor. Espero que daqui a dez anos possamos olhar para trás com a mesma impressão mista de progresso e continuidade.»</blockquote>
-			<blockquote class="quote_en">«One of the comforting things about old memories is their tendency to take on a rosy glow. The programming environment provided by the early versions of Unix seems, when described here, to be extremely harsh and primitive. I am sure that if forced back to the PDP-7 I would find it intolerably limiting and lacking in conveniences. Nevertheless, it did not seem so at the time; the memory fixes on what was good and what lasted, and on the joy of helping to create the improvements that made life better. In ten years, I hope we can look back with the same mixed impression of progress combined with continuity.» (artigo apresentado numa conferência em Sydney)</blockquote>
+			<blockquote class="quote_en">«One of the comforting things about old memories is their tendency to take on a rosy glow. The programming environment provided by the early versions of Unix seems, when described here, to be extremely harsh and primitive. I am sure that if forced back to the PDP-7 I would find it intolerably limiting and lacking in conveniences. Nevertheless, it did not seem so at the time; the memory fixes on what was good and what lasted, and on the joy of helping to create the improvements that made life better. In ten years, I hope we can look back with the same mixed impression of progress combined with continuity.» (artigo apresentado numa conferência em Sydney<sup><a href="/sobre.html#2">2</a></sup>)</blockquote>
 
   		</main>
 
