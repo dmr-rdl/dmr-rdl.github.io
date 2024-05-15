@@ -135,8 +135,10 @@ img.titulo_imagem {
 /* Painel Sobre */
 .painel_sobre {
     margin: 0 auto;
-    border-collapse: collapse;
+    overflow-x: auto;
 }
+
+.painel_sobre table { border-collapse: collapse; }
 
 .painel_sobre td {
     vertical-align: top;
